@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "reveal": "always",
+    "options": {
+        "cwd": "${workspaceRoot}"
+    },
+    "tasks": [
+        {
+            "label": "Compile & Run",
+            "type": "shell",
+            "command": "sh ${workspaceRoot}/.vscode/compile.sh ${fileDirname} ${fileBasenameNoExtension}",
+        },
+        {
+            "label": "Compile & Run with Input",
+            "type": "shell",
+            "command": "sh ${workspaceRoot}/.vscode/compileNinput.sh ${fileDirname} ${fileBasenameNoExtension}",
+        }
+    ]
+}
