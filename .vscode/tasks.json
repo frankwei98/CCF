@@ -9,11 +9,17 @@
             "label": "Compile & Run",
             "type": "shell",
             "command": "sh ${workspaceRoot}/.vscode/compile.sh ${fileDirname} ${fileBasenameNoExtension}",
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "Compile & Run with Input",
             "type": "shell",
             "command": "sh ${workspaceRoot}/.vscode/compileNinput.sh ${fileDirname} ${fileBasenameNoExtension}",
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }

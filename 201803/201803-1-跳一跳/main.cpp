@@ -21,29 +21,34 @@ int main()
     {
         int x;
         cin >> x;
-        if (x == 0)
-        {
+        if (x == 0) {
             break;
         }
-        else if (x == 1)
+        switch (x)
         {
-            point += 1;
-            lastAddedPoint = 1;
-            lastNumber = 1;
-        }
-        else
-        {
-            // x == 2 no doki
-            if (lastNumber == 2)
+            case 2:
             {
-                lastAddedPoint += 2;
-            }
-            else
+                if (lastNumber == 2)
+                {
+                    lastAddedPoint += 2;
+                }
+                else
+                {
+                    lastAddedPoint = 2;
+                }
+                point += (lastAddedPoint);
+                lastNumber = 2;
+                break;
+            };
+            case 1:
             {
-                lastAddedPoint = 2;
+                point += 1;
+                lastAddedPoint = 1;
+                lastNumber = 1;
+                break;
+            };
+            default: {
             }
-            point += (lastAddedPoint);
-            lastNumber = 2;
         }
     }
 
