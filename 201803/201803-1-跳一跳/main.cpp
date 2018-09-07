@@ -4,7 +4,6 @@ using namespace std;
 
 vector<int> numbers;
 int point = 0, lastNumber = 1, lastAddedPoint = 0;
-;
 // 问题描述
 // 　　近来，跳一跳这款小游戏风靡全国，受到不少玩家的喜爱。
 // 　　简化后的跳一跳规则如下：玩家每次从当前方块跳到下一个方块，如果没有跳到下一个方块上则游戏结束。
