@@ -1,8 +1,6 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
-vector<int> numbers;
 int point = 0, lastNumber = 1, lastAddedPoint = 0;
 // 问题描述
 // 　　近来，跳一跳这款小游戏风靡全国，受到不少玩家的喜爱。
