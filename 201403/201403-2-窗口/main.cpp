@@ -4,13 +4,9 @@
 
 using namespace std;
 
-class Window
-{
-  public:
+struct Window {
     int n, x1, y1, x2, y2;
-    Window(){
-
-    };
+    Window() {}
     Window(int n, int x1, int y1, int x2, int y2)
     {
         this->n = n;
@@ -24,6 +20,10 @@ class Window
 struct MouseClick
 {
     int x, y;
+    MouseClick(int x, int y) {
+        this->x = x;
+        this->y = y;
+    }
 };
 
 stack<Window> windows;
@@ -32,7 +32,6 @@ vector<MouseClick> mouseClicks;
 void clickAWindow(int windowsNumber)
 {
     stack<Window> newWindowsList;
-    // vector<Window> newWindowsList;
     Window target;
     while (!windows.empty())
     {
@@ -43,7 +42,6 @@ void clickAWindow(int windowsNumber)
         }
         else
         {
-            // newWindowsList.push_back(w);
             newWindowsList.push(w);
         }
         windows.pop();
@@ -53,11 +51,6 @@ void clickAWindow(int windowsNumber)
         newWindowsList.pop();
         windows.push(_w);
     }
-    // for (int i = 0; i < newWindowsList.size(); i++)
-    // {
-    //     Window _w = newWindowsList[i];
-    //     windows.push(_w);
-    // }
     windows.push(target);
 }
 
@@ -99,9 +92,7 @@ int main()
     for (int i = 0; i < M; i++)
     {
         cin >> x >> y;
-        MouseClick c;
-        c.x = x;
-        c.y = y;
+        MouseClick c(x,y);
         mouseClicks.push_back(c);
     }
 
