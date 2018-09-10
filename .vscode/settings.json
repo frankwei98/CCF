@@ -15,6 +15,10 @@
         "map": "cpp",
         "string": "cpp",
         "string_view": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "__functional_03": "cpp",
+        "functional": "cpp",
+        "queue": "cpp",
+        "deque": "cpp"
     }
 }
