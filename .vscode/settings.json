@@ -21,6 +21,8 @@
         "queue": "cpp",
         "deque": "cpp",
         "stack": "cpp",
-        "__string": "cpp"
+        "__string": "cpp",
+        "random": "cpp",
+        "algorithm": "cpp"
     }
 }
